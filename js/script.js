@@ -55,9 +55,8 @@ if (emailValida == true) {
 
 
 //Gioco dei dadi
-
 /*
-.1 creare un ciclo da 1 a 6 che genera un numero randome sia per il pc che per l'utente
+.1 da 1 a 6 che genera un numero randome sia per il pc che per l'utente
 .2 far uscire il numero e controllare a chi è uscito quello più alto
 .3 dichiarare il vincitore
 */
