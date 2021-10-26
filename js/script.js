@@ -24,20 +24,20 @@ const email = [
   'perdigon@psasey.site',
   'perdigon@mexcool.com',
 ]
-// console.log(email);
+console.log(email);
 
 let emailValida = prompt('inserisci qui la tua email');
-//console.log(emailValida);
+console.log(emailValida);
 
 for (let i = 0; i < email.length; i++) {
-  // console.log(email [i]);
+  console.log(email [i]);
   
 
   if (email[i] === emailValida) {
     emailValida = true;
-    //console.log('puoi accedere');
+    console.log('puoi accedere');
   } else if (email[i] !== emailValida) {
-    //console.log('non puoi accedere');
+    console.log('non puoi accedere');
   }
 }
 
@@ -45,12 +45,12 @@ let accediONo = document.getElementById('output');
 
 if (emailValida == true) {
   accediONo.innerHTML = 'puoi accedere';
-  //console.log('puoi accedere');
+  console.log('puoi accedere');
 } else {
   accediONo.innerHTML = 'non puoi accedere';
-  //console.log('non puoi accedere');
-}
-*/
+  console.log('non puoi accedere');
+}*/
+
 
 
 
@@ -64,6 +64,7 @@ if (emailValida == true) {
 
 let pc = '';
 let adolfo = 'Adolfo';
+let winner = document.getElementById('output');
 
 pc = Math.floor(Math.random() * 6) +1;
 console.log('pc', pc);
@@ -71,12 +72,12 @@ adolfo = Math.floor(Math.random() * 6) +1;
 console.log('adolfo',adolfo);
 
 if (pc<adolfo) {
-  let winner = document.getElementById('output').innerHTML = 
+  winner.innerHTML = 
   `Hai vinto Adolfo perchè il tuo dado è uscito ${adolfo} mentre il pc ${pc} , il tuo numero è più alto e quindi hai vinto`;
 } else if (pc>adolfo) {
-  let winner = document.getElementById('output').innerHTML = 
+  winner.innerHTML = 
   `Mi dispiace Adolfo, hai perso. È uscito ${adolfo} mentre il pc ${pc} , ritenta!`;
 } else if (pc==adolfo) {
-  let winner = document.getElementById('output').innerHTML = 
+  winner.innerHTML = 
   `Pari! Entrambi avete tirato ${pc, adolfo}`;
 }
