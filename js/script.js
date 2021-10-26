@@ -62,14 +62,13 @@ if (emailValida == true) {
 .3 dichiarare il vincitore
 */
 
-let pc = '';
-let adolfo = '';
-let winner = document.getElementById('output');
 
-pc = Math.floor(Math.random() * 6) +1;
+let pc = Math.floor(Math.random() * 6) +1;
 console.log('pc', pc);
-adolfo = Math.floor(Math.random() * 6) +1;
+let adolfo = Math.floor(Math.random() * 6) +1;
 console.log('adolfo',adolfo);
+
+let winner = document.getElementById('output');
 
 if (pc<adolfo) {
   winner.innerHTML = 
