@@ -63,7 +63,7 @@ if (emailValida == true) {
 */
 
 let pc = '';
-let adolfo = 'Adolfo';
+let adolfo = '';
 let winner = document.getElementById('output');
 
 pc = Math.floor(Math.random() * 6) +1;
