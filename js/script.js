@@ -29,20 +29,24 @@ let emailValida = prompt('inserisci qui la tua email');
 
 for (let i = 0; i < email.length; i++) {
   // console.log(email [i]);
-  let accediONo = document.getElementById('valida-o-no');
+  
 
   if (email[i] === emailValida) {
     emailValida = true;
-    accediONo.innerHTML = 'puoi accedere';
     //console.log('puoi accedere');
   } else if (email[i] !== emailValida) {
-    accediONo.innerHTML = 'non puoi accedere';
     //console.log('non puoi accedere');
   }
 }
 
+let accediONo = document.getElementById('valida-o-no');
+
 if (emailValida == true) {
-  console.log('puoi accedere');
+  accediONo.innerHTML = 'puoi accedere';
+  //console.log('puoi accedere');
 } else {
-  console.log('non puoi accedere');
+  accediONo.innerHTML = 'non puoi accedere';
+  //console.log('non puoi accedere');
 }
+
+
