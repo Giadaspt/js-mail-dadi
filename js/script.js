@@ -13,7 +13,7 @@ const email = [
   'perdigon@teeoli.com',
   'perdigon@onlinecmail.com',
   'perdigon@howti.site',
-  'perdigon@howti.site',
+  'perdigon@howtiss.site',
   'perdigon@howti.site',
   'perdigon@beaplumbereducationok.sale',
   'perdigon@psasey.site',
@@ -22,3 +22,27 @@ const email = [
   'perdigon@psasey.site',
   'perdigon@mexcool.com',
 ]
+// console.log(email);
+
+let emailValida = prompt('inserisci qui la tua email');
+//console.log(emailValida);
+
+for (let i = 0; i < email.length; i++) {
+  // console.log(email [i]);
+  let accediONo = document.getElementById('valida-o-no');
+
+  if (email[i] === emailValida) {
+    emailValida = true;
+    accediONo.innerHTML = 'puoi accedere';
+    //console.log('puoi accedere');
+  } else if (email[i] !== emailValida) {
+    accediONo.innerHTML = 'non puoi accedere';
+    //console.log('non puoi accedere');
+  }
+}
+
+if (emailValida == true) {
+  console.log('puoi accedere');
+} else {
+  console.log('non puoi accedere');
+}
