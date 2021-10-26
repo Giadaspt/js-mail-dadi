@@ -1,3 +1,4 @@
+
 // Mail
 /*
 .1 creare una lista di email finte degli eventuali utenti, quindi creare un array con tutte le email.
@@ -6,6 +7,7 @@
 .4 output dicendo all'uitente che l'email è valida (perchè nella lista), oppure no
 */
 
+/*
 const email = [
   'perdigon@sewce.com',
   'perdigon@gmailni.com',
@@ -39,7 +41,7 @@ for (let i = 0; i < email.length; i++) {
   }
 }
 
-let accediONo = document.getElementById('valida-o-no');
+let accediONo = document.getElementById('output');
 
 if (emailValida == true) {
   accediONo.innerHTML = 'puoi accedere';
@@ -48,5 +50,33 @@ if (emailValida == true) {
   accediONo.innerHTML = 'non puoi accedere';
   //console.log('non puoi accedere');
 }
+*/
 
 
+
+//Gioco dei dadi
+
+/*
+.1 creare un ciclo da 1 a 6 che genera un numero randome sia per il pc che per l'utente
+.2 far uscire il numero e controllare a chi è uscito quello più alto
+.3 dichiarare il vincitore
+*/
+
+let pc = '';
+let adolfo = 'Adolfo';
+
+pc = Math.floor(Math.random() * 6) +1;
+console.log('pc', pc);
+adolfo = Math.floor(Math.random() * 6) +1;
+console.log('adolfo',adolfo);
+
+if (pc<adolfo) {
+  let winner = document.getElementById('output').innerHTML = 
+  `Hai vinto Adolfo perchè il tuo dado è uscito ${adolfo} mentre il pc ${pc} , il tuo numero è più alto e quindi hai vinto`;
+} else if (pc>adolfo) {
+  let winner = document.getElementById('output').innerHTML = 
+  `Mi dispiace Adolfo, hai perso. È uscito ${adolfo} mentre il pc ${pc} , ritenta!`;
+} else if (pc==adolfo) {
+  let winner = document.getElementById('output').innerHTML = 
+  `Pari! Entrambi avete tirato ${pc, adolfo}`;
+}
